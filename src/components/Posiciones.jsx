@@ -6,7 +6,7 @@ function Posiciones() {
   const [error, setError] = useState(null); // Nuevo estado para manejar errores
 
   useEffect(() => {
-    fetch('https://lsf.ar/est/api.php')
+    fetch('http://localhost/liga_estadisticas/api.php')
       .then(response => response.json())
       .then(data => {
         setPosiciones(data.posiciones);
@@ -42,7 +42,7 @@ function Posiciones() {
           </tr>
         </thead>
         <tbody>
-          {posiciones.map((equipo, index) => (
+          {posiciones?.map((equipo, index) => (
             <tr key={index}>
               <td>{index + 1}</td>
               <td>
@@ -50,7 +50,6 @@ function Posiciones() {
                   if (escudo.equipo === equipo.equipos_pos) {
                     return <img key={escudo.equipo} className="escudos" src={`escudos/${escudo.escudo}`} alt="" />;
                   }
-                  return null;
                 })}
               </td>
               <td>{equipo.equipos_pos}</td>

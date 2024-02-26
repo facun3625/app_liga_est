@@ -3,7 +3,7 @@ import "../Styles/main.css";
 import logoImage from "../img/logo.png";
 import Burguer from "./Burguer";
 
-function Navbar() {
+function NavBar() {
 	const navRef = useRef();
 
 	const showNavbar = () => {
@@ -36,4 +36,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar;
+export default NavBar;

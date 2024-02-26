@@ -1,13 +1,13 @@
 
-import Navbar from './components/Navbar'
+import NavBar from './components/NavBar'
 import Posiciones from './components/Posiciones'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Posiciones/>
+      <NavBar/>
+      {/* <Posiciones/> */}
     </>
   )
 }
