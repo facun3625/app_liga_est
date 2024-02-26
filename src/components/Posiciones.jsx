@@ -50,12 +50,12 @@ function Posiciones() {
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>
-                  {/* {escudos.map(escudo => {
+                  {escudos.map(escudo => {
                     if (escudo.equipo === equipo.equipos_pos) {
                       return <img key={escudo.equipo} src={`../assets/escudos/${escudo.escudo}`} alt="" />;
                     }
-                  })} */}
-                  <img src={`../assets/escudos/e_Academia AC.jpg`} alt="" />
+                  })}
+                  {/* <img src={`../assets/escudos/e_Academia AC.jpg`} alt="" /> */}
                 </td>
                 <td>{equipo.equipos_pos}</td>
                 <td>{equipo.pts}</td>
