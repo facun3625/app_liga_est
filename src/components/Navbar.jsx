@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "../Styles/main.css";
 import logoImage from "../img/logo.png";
 import Burguer from "./Burguer";
+import { Link } from "react-router-dom";
 
 function NavBar() {
 	const navRef = useRef();
@@ -16,11 +17,10 @@ function NavBar() {
 		<header>
 			<img src={logoImage} alt="LOGO" className="logo" />
 			<nav ref={navRef}>
-				<a href="/#">Inicio</a>
-				<a href="/#">Noticias</a>
-				<a href="/#">Posiciones</a>
-				<a href="/#">Fixture</a>
-                <a href="/#">Promedios</a>
+				<Link to={'src/components/Noticias'}>Noticias</Link>
+				<Link to={'src/components/Posiciones'}>Posiciones</Link>
+				
+				
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
